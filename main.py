@@ -4,7 +4,7 @@ tweet="it is terrible, horrible, and very bad"
 url='https://jamiembrown-tweet-sentiment-analysis.p.mashape.com/api/?text='+tweet
 response = unirest.get(url,
   headers={
-    "X-Mashape-Key": "BUkeL7hxhGmshsISnWOul7G3y4G0p136jT7jsnytrVZ9PmVTBd",
+    "X-Mashape-Key": "Key",
     "Accept": "application/json"
   }
 )
