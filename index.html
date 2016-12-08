@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>CS5600 Project</title>
+	</head>
+<body>
+	<h1 align="center"> Influence Of Social Media On Stock Market With Sentiment Analysis Aproach</h1>
+	<h5 align="center"> Utah State University </h5>
+	<h4 align="center"> Vahe Vanoyan </h4>
+
+<p>
+</p>
+<ul class=ULtag>	
+<li><a href="index.html">Project</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="observations.html">Observations</a></li>
+<li><a href="results.html">Results</a></li>
+<li><a href="docs.html">API Documentations</a></li>
+<li><a href="poster.html">Poster</a></li>
+
+</ul>
+<hr/>
+
+<div>
+<h3>About The Project</h3>
+
+ <p>This project introduces a bridge between Social Media and the Stock Market. Social Media has became a big part of everyone’s life, and every single individual participating in mass media has it’s own impact on the social media. Large public companies and corporations play a part in social media as well. There are thousands of companies working on tools for Stock Market: predicting, analysing, buying-selling and etc. It is almost impossible to predict the price of the company's stock with a single analysis, as there is a mountain of information to consider. There is a very well known theory in finance “Random Walk Theory”, which says that one can never predict the stock price at given time, as the stock price randomly moves up and down. Another obstacle for predicting the stock price is that the future success and failure analysis is already calculated within the stock price so theoretically it is impossible to predict the stock price. 
+
+ But as mentioned above, social media has become so big that it can impact companies. The main goal of the project is to predict price of a stock using web scraping and sentiment analysis approach.
+</p>
+
+
+ <h3>Data</h3>
+<p>Data was gathered from NASDAQ database, which twitter information about each. Data cleaning process was done in Python, and also data integration with stock market data from Yahoo Finance. Initial data had the following fields: Date and Time, Username, Number of Favorites, Number of Retweets. After doing several MapReduce jobs, and data preprocessing there were clean ready to use data in hand. Please see more information in Observations page.</p>
+ <h3>Methods</h3>
+<p>
+Twitter Search API – Twitter Search API was used to get real time data from twitter about a topic or a company. <br>
+Bing News API – Bing News API was used to get real time news data, to make sure that twitter feed is not coming from news, in other words the topic is not trending yet. <br>
+Tweet Sentiment API- Tweet Sentiment API has been used to determine polarity of tweets (positive/natural/negative). <br>
+NLTK – NLTK is a natural language processing library in Python. NLTK was used to parse and normalize the twitter feed for more accurate sentiment. <br>
+Tf-Idf – Tf-Idf method was used to classify data and find cosine similarity between news feed and twitter feed. <br>
+PorterStemmer – PorterStemmer class has been used to stem news feed and twitter feed. <br>
+</p>
+ <h3>Program</h3>
+<p>
+The program is written in python. Python program calls the function every 10 minutes, and checks the real time twitter feed for given names, hashtags and terms. Program will calculate the influence of the tweets and separate them as negative or positive. The influence will be calculated by number of favorites and number of the followers that user has. If program notices big changes in twitter negative or positive influence, it will check the real time news feed and determine whether the twitter feed comes from the news, in other words it will check whether the topic is trending or not, using cosine similarity. </p>
+<p>
+<br>
+<hr>
+<br>
+</p>
+</div>
+</body>
+</html>
+
+
+
+

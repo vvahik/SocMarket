@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href=".css" rel="stylesheet" type="text/css" />
+		<title>CS5600 Project</title>
+	</head>
+<body>
+	<h1 align="center"> Influence Of Social Media On Stock Market With Sentiment Analysis Aproach</h1>
+	<h5 align="center"> Utah State University </h5>
+	<h4 align="center"> Vahe Vanoyan </h4>
+
+<ul class= ULtag>	
+<li><a href="index.html">Project</a></li>
+<li><a href="insights.html">Insights</a></li>
+<li><a href="observations.html">Observations</a></li>
+<li><a href="results.html">Results</a></li>
+<li><a href="docs.html">API Documentations</a></li>
+<li><a href="poster.html">Poster</a></li>
+
+</ul>
+<hr>
+<div>
+<h3>Results</h3>
+
+<p>
+Due to the nature of the program that is based on the real time data, it is impossible to test and calculate accuracy on. For that reason, past data was used to observe and find if the program will successfully operate if the twitter feed is hyper active but the stock market has not been changed. </p>
+
+<p>For testing purposes Apple Inc. and Alphabet Inc. historic stock price and historic twitter data has been chosen to conduct analysis on. </p>
+
+ <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day Of Apple Inc.</h4>
+
+<p>
+A scatter plot has been used to visualize the data and find correlations between twitter data and stock market. The data was normalized for twitter feed of the day and price change of the next day.
+</p>
+<h6>Fig. 1 Apple Inc. Influence and Stock Price Change Of The Follwoing Day</h6>
+<p><img src="img/appleResult.jpg" alt="appleResult" height="500" width="600"/></p>
+<p>
+In Fig. 1 is illustrated the influence and stock price change of Apple Inc. next day, the purpose of this kind of normalization is that we care about the price change in the next day because it is natural for twitter users to tweet about a topic that has influenced the stock price already.<br>
+In Fig. 1 we can see two points that could interest us (marked with white circle). Both of these points are on high influence and high price change. For this case we will look only at one point with highest influence and highest price change (marked with red arrow). As we can see the price has changed with almost 2.75$ in a day, but the prior day the twitter feed was very active. This shows us the program would be able to grab this information, and make decision of buying or selling the stock.
+ </p>
+ <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day of Alphabet Inc.</h4>
+
+<p>
+A scatter plot has been used to visualize the data and find correlations between twitter data and stock market. The data was normalized for twitter feed of the day and price change of the next day.
+</p>
+<h6>Fig. 2 Alphabet Inc. Influence and Stock Price Change Of The Follwoing Day</h6>
+<p><img src="img/googleResult.jpg" alt="googleResult" height="500" width="600"/></p>
+<p>
+In Fig. 2 is illustrated the influence and stock price change of Alphabet Inc. next day, the purpose of this kind of normalization is that we care about the price change in the next day because it is natural for twitter users to tweet about a topic that has influenced the stock price already. <br>
+We can’t see any points on the Fig. 2 that matches our criteria, we do not have any high price change on the data while having high influence in Twitter feed prior to the day. The high influence points indicate the days that Twitter users have been active on an event that has happened already. </p>
+
+
+
+<p>
+<br>
+<hr>
+<br>
+</p>
+</div>
+</body>
+</html>
+
