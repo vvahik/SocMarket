@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Influence Of Social Media On Stock Market With Sentiment Analysis Aproach" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Vahe Vanoyan</title>
+  </head>
+
+  <body>
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/vvahik/SocMarket">View on GitHub</a>
+
+          <h1 id="project_title">Influence Of Social Media On Stock Market With Sentiment Analysis Aproach</h1>
+          <h2 id="project_tagline">Vahe Vanoyan<br>Utah State University</h2>
+
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/vvahik/SocMarket/archive/master.zip">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/vvahik/SocMarket/archive/master.zip">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>About The Project</h1>
+        <p>This project introduces a bridge between Social Media and the Stock Market. Social Media has became a big part of everyone’s life, and every single individual participating in mass media has it’s own impact on the social media. Large public companies and corporations play a part in social media as well. There are thousands of companies working on tools for Stock Market: predicting, analysing, buying-selling and etc. It is almost impossible to predict the price of the company's stock with a single analysis, as there is a mountain of information to consider. There is a very well known theory in finance “Random Walk Theory”, which says that one can never predict the stock price at given time, as the stock price randomly moves up and down. Another obstacle for predicting the stock price is that the future success and failure analysis is already calculated within the stock price so theoretically it is impossible to predict the stock price. <br>
+ But as mentioned above, social media has become so big that it can impact companies. The main goal of the project is to predict price of a stock using web scraping and sentiment analysis approach.</p>
+
+        <h4>Data</h4>
+
+        <p>Data was gathered from NASDAQ database, which twitter information about each. Data cleaning process was done in Python, and also data integration with stock market data from Yahoo Finance. Initial data had the following fields: Date and Time, Username, Number of Favorites, Number of Retweets. After doing several MapReduce jobs, and data preprocessing there were clean ready to use data in hand. Please see more information in Observations page.</p>
+
+        <h4>Methods</h4>
+
+        <p>Twitter Search API – Twitter Search API was used to get real time data from twitter about a topic or a company. <br>
+        Bing News API – Bing News API was used to get real time news data, to make sure that twitter feed is not coming from news, in other words the topic is not trending yet. <br>
+        Tweet Sentiment API- Tweet Sentiment API has been used to determine polarity of tweets (positive/natural/negative). <br>
+        NLTK – NLTK is a natural language processing library in Python. NLTK was used to parse and normalize the twitter feed for more accurate sentiment. <br>
+        Tf-Idf – Tf-Idf method was used to classify data and find cosine similarity between news feed and twitter feed. <br>
+        PorterStemmer – PorterStemmer class has been used to stem news feed and twitter feed. <br></p>
+
+        <h4>Program</h4>
+
+        <p>The program is written in python. Python program calls the function every 10 minutes, and checks the real time twitter feed for given names, hashtags and terms. Program will calculate the influence of the tweets and separate them as negative or positive. The influence will be calculated by number of favorites and number of the followers that user has. If program notices big changes in twitter negative or positive influence, it will check the real time news feed and determine whether the twitter feed comes from the news, in other words it will check whether the topic is trending or not, using cosine similarity.</p>
+
+
+        <h1>Insights</h1>
+
+        <p>Analyzing the data, there were very interesting correlations found between stock market and social media. Stock market is unpredictable, but at the same time if one can predict one or two prices per year, it is an opportunity.</p> 
+
+        <p>For testing and analyzing purposes Apple Inc. has been chosen to do analysis on. There were some interesting points in the graph found. 
+        Please see the graph representing the influence in social media and price of Apple Inc. of the following day.</p>
+        <h6>Fig. 1 Apple Inc. Price and Influence</h6>
+        <p><img class=imgA src="img/apple1.jpg" alt="apple1" height="500" width="600"/></p>
+        <p>As illustrated in Fig. 1, and pointed we red arrows there is one point were influence is comparably very high, but the price has not been changed much the day before. Instead the price has been dropped for almost 2.5 dollars next day. Which is what the project is looking to find. The reasons or topics is not very important, there is a fact twitter feed was active a day before stock market was influenced. 
+        Other than the day pointed with the red arrow, the stock market and social media has been acting naturally. When something happens in the stock market, twitter users react to the change. 
+        </p>
+        <p>It is always important to find cases were social media does not act before the price change, and for this purpose Google Inc. data has been evaluated. Please see stock price and the influence of twitter of Google Inc. in the following graph.
+        </p>
+        <h6>Fig. 2 Alphabet Inc. Price and Influence</h6>
+        <p><img src="img/google1.jpg" alt="google1" height="500" width="600"/></p>
+        <p>As illustrated in Fig. 2, there are no points in the graph that stock market has been changed dramatically. Both points where influence has been high comparably, stock market reacted before the social media. </p>
+        <h1>Observations</h1>
+
+        <p>
+        For data analysis and visualization purposes, Apple Inc. company has been used to visualize data and observe. 
+         </p>
+         <h4>Best Time Of The Day</h4>
+
+        <p>
+        Using MapReduce techniques data was normalized to find the most active and passive times for twitter feed.
+        </p>
+        <h6>Fig. 1 Apple Inc. Best Time Of The Day</h6>
+        <p><img src="img/appleTime.jpg" alt="appleTime" height="500" width="600"/></p>
+        <p>
+        In Fig. 1 is illustrated the most active times of the twitter feed about Apple Inc.. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. 
+        </p>
+
+         <h4>Best Day Of The Week</h4>
+
+        <p>
+        Using MapReduce techniques data was normalized to find the most active and passive days for twitter feed.
+        </p>
+        <h6>Fig. 2 Apple Inc. Day Of The Week</h6>
+        <p><img src="img/appleDay.jpg" alt="appleDay" height="500" width="600"/></p>
+        <p>
+        In Fig. 2 is illustrated the most active days of the twitter feed about Apple Inc.. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. 
+        </p>
+         <h4>Price Change Average Of Week Days</h4>
+
+        <p>
+        Using MapReduce techniques data was normalized to find average positive and average negative changes of the stock price of Apple Inc..
+        </p>
+        <h6>Fig. 3 Apple Inc. Price Change</h6>
+        <p><img src="img/appleChange.jpg" alt="appleChange" height="500" width="600"/></p>
+        <p>
+        In Fig. 3 is illustrated the average negative and average positive price changes. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively.  
+        </p>
+
+
+
+         <h4>World Heat Map Of Twitter Feed</h4>
+
+        <p>
+        The location of each Twitter user has been determined using Twitter Search API, and using MapReduce techniques the data was normalized. 
+
+        </p>
+        <h6>Fig. 4 Apple Inc. Twitter Feed Heat Map</h6>
+        <p><img src="img/appleMap.jpg" alt="appleMap" height="500" width="600"/></p>
+        <p>
+        In Fig. 4 is illustrated the world heat map showing number of tweets about Apple Inc.. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. </p>
+
+        <h1>Results</h1>
+
+        <p>
+        Due to the nature of the program that is based on the real time data, it is impossible to test and calculate accuracy on. For that reason, past data was used to observe and find if the program will successfully operate if the twitter feed is hyper active but the stock market has not been changed. </p>
+
+        <p>For testing purposes Apple Inc. and Alphabet Inc. historic stock price and historic twitter data has been chosen to conduct analysis on. </p>
+
+         <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day Of Apple Inc.</h4>
+
+        <p>
+        A scatter plot has been used to visualize the data and find correlations between twitter data and stock market. The data was normalized for twitter feed of the day and price change of the next day.
+        </p>
+        <h6>Fig. 1 Apple Inc. Influence and Stock Price Change Of The Follwoing Day</h6>
+        <p><img src="img/appleResult.jpg" alt="appleResult" height="500" width="600"/></p>
+        <p>
+        In Fig. 1 is illustrated the influence and stock price change of Apple Inc. next day, the purpose of this kind of normalization is that we care about the price change in the next day because it is natural for twitter users to tweet about a topic that has influenced the stock price already.<br>
+        In Fig. 1 we can see two points that could interest us (marked with white circle). Both of these points are on high influence and high price change. For this case we will look only at one point with highest influence and highest price change (marked with red arrow). As we can see the price has changed with almost 2.75$ in a day, but the prior day the twitter feed was very active. This shows us the program would be able to grab this information, and make decision of buying or selling the stock.
+         </p>
+         <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day of Alphabet Inc.</h4>
+
+        <p>
+        A scatter plot has been used to visualize the data and find correlations between twitter data and stock market. The data was normalized for twitter feed of the day and price change of the next day.
+        </p>
+        <h6>Fig. 2 Alphabet Inc. Influence and Stock Price Change Of The Follwoing Day</h6>
+        <p><img src="img/googleResult.jpg" alt="googleResult" height="500" width="600"/></p>
+        <p>
+        In Fig. 2 is illustrated the influence and stock price change of Alphabet Inc. next day, the purpose of this kind of normalization is that we care about the price change in the next day because it is natural for twitter users to tweet about a topic that has influenced the stock price already. <br>
+        We can’t see any points on the Fig. 2 that matches our criteria, we do not have any high price change on the data while having high influence in Twitter feed prior to the day. The high influence points indicate the days that Twitter users have been active on an event that has happened already. </p>
+        <h1>API Documentations</h1>
+        <h5>Twitter API</h5>
+        For Twitter Search API usage please follow this <a href="https://dev.twitter.com/rest/public/search">link</a> for documentations.
+         <h5>Bing News API</h5>
+        For Bing News API usage please follow this <a href="https://www.microsoft.com/cognitive-services/en-us/bing-news-search-api">link</a> for documentations.
+         <h5>Sentiment Analysis API</h5>
+        For Sentiment Analysis API usage please follow this <a href="https://www.tweetsentimentapi.com">link</a> for documentations.
+        <!-- <h1>Poster</h1> -->
+<!--         <p name='post'><img src="img/poster.jpg" alt="poster" height="750" width="1250"/></p>-->
+        <br><hr><br>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>
