@@ -66,7 +66,13 @@
         </p>
         <h6>Fig. 2 Alphabet Inc. Price and Influence</h6>
         <p><img src="img/google1.jpg" alt="google1" height="500" width="600"/></p>
-        <p>As illustrated in Fig. 2, there are no points in the graph that stock market has been changed dramatically. Both points where influence has been high comparably, stock market reacted before the social media. </p>
+        <p>In the Fig. 2 we can see a big price change (marked with blue arrow) and it is associated with high change of influence, even though influence is comparably high but it is not so high that would interest us at his point. While looking at the influence level marked with red arrow, we can see that there are no big price changes recorded. The high influence can be caused by a big change in price in last 5 days.</p>
+        <p>Company, Tesla has been chosen for further analysis. As Tesla one of the most successful none IT companies, It would be interesting to visualize and analyze Tesla stock price with Twitter Data. 
+        </p>
+        <h6>Fig. 3 Tesla Price and Influence</h6>
+        <p><img src="img/tesla1.jpg" alt="tesla1" height="500" width="600"/></p>
+        <p>In the Fig. 3, the date marked with red arrow indicates that only interesting point for us to look into. There was a huge price growth, with very high influence. Moreover, the price kept changing while the twitter data was very active. There are many other points in the graph having high influence level, but the price change was not recorded for the next day. This can be associated with past events that happened with the company, or stock market. It is natural that twitter reacts to the stock market changes late.
+</p>
         <h1>Observations</h1>
 
         <p>
@@ -79,32 +85,38 @@
         </p>
         <h6>Fig. 1 Apple Inc. Best Time Of The Day</h6>
         <p><img src="img/appleTime.jpg" alt="appleTime" height="500" width="600"/></p>
+        
+        <h6>Fig. 2 Alphabet Inc. Best Time Of The Day</h6>
+        <p><img src="img/googleTime.jpg" alt="googleTime" height="500" width="600"/></p>
+
         <p>
-        In Fig. 1 is illustrated the most active times of the twitter feed about Apple Inc.. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. 
+        In Fig. 1 and Fig. 2 are illustrated the most active times of the twitter feed about the companies. Even though this information is not directly linked to the project purpose but these will help to observe social media and stock market more effectively. 
         </p>
-
          <h4>Best Day Of The Week</h4>
-
         <p>
         Using MapReduce techniques data was normalized to find the most active and passive days for twitter feed.
         </p>
-        <h6>Fig. 2 Apple Inc. Day Of The Week</h6>
+        <h6>Fig. 3 Apple Inc. Day Of The Week</h6>
         <p><img src="img/appleDay.jpg" alt="appleDay" height="500" width="600"/></p>
+
+        <h6>Fig. 4 Alphabet Inc. Day Of The Week</h6>
+        <p><img src="img/googleDay.jpg" alt="googleDay" height="500" width="600"/></p>
+        
         <p>
-        In Fig. 2 is illustrated the most active days of the twitter feed about Apple Inc.. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. 
+        In Fig. 3 and Fig. 4 are illustrated the most active days of the twitter feed about Apple Inc. and Alphabet Inc. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. 
         </p>
          <h4>Price Change Average Of Week Days</h4>
-
         <p>
         Using MapReduce techniques data was normalized to find average positive and average negative changes of the stock price of Apple Inc..
         </p>
-        <h6>Fig. 3 Apple Inc. Price Change</h6>
+        <h6>Fig. 5 Apple Inc. Price Change</h6>
         <p><img src="img/appleChange.jpg" alt="appleChange" height="500" width="600"/></p>
+        <h6>Fig. 6 Alphabet Inc. Price Change</h6>
+        <p><img src="img/googleChange.jpg" alt="googleChange" height="500" width="600"/></p>
         <p>
-        In Fig. 3 is illustrated the average negative and average positive price changes. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively.  
+        <p>
+        In Fig. 5 and Fig. 6 are illustrated the average negative and average positive price changes. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively.  
         </p>
-
-
 
          <h4>World Heat Map Of Twitter Feed</h4>
 
@@ -112,11 +124,12 @@
         The location of each Twitter user has been determined using Twitter Search API, and using MapReduce techniques the data was normalized. 
 
         </p>
-        <h6>Fig. 4 Apple Inc. Twitter Feed Heat Map</h6>
+        <h6>Fig. 7 Apple Inc. Twitter Feed Heat Map</h6>
         <p><img src="img/appleMap.jpg" alt="appleMap" height="500" width="600"/></p>
+        <h6>Fig. 8 Alphabet Inc. Twitter Feed Heat Map</h6>
+        <p><img src="img/googleMap.jpg" alt="googleMap" height="500" width="600"/></p>
         <p>
-        In Fig. 4 is illustrated the world heat map showing number of tweets about Apple Inc.. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. </p>
-
+        In Fig. 7 and Fig. 8 are illustrated the world heat map showing number of tweets about Apple Inc. and Alphabet Inc. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. </p>
         <h1>Results</h1>
 
         <p>
@@ -145,6 +158,19 @@
         <p>
         In Fig. 2 is illustrated the influence and stock price change of Alphabet Inc. next day, the purpose of this kind of normalization is that we care about the price change in the next day because it is natural for twitter users to tweet about a topic that has influenced the stock price already. <br>
         We can’t see any points on the Fig. 2 that matches our criteria, we do not have any high price change on the data while having high influence in Twitter feed prior to the day. The high influence points indicate the days that Twitter users have been active on an event that has happened already. </p>
+
+        <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day of Tesla</h4>
+
+        <p>
+        A scatter plot has been used to visualize the data and find correlations between twitter data and stock market. The data was normalized for twitter feed of the day and price change of the next day.
+        </p>
+        <h6>Fig. 3 Tesla Influence and Stock Price Change Of The Follwoing Day</h6>
+        <p><img src="img/teslaResult.jpg" alt="teslaResult" height="500" width="600"/></p>
+        <p>
+        In Fig. 3 is illustrated the influence and stock price change of Alphabet Inc. next day, the purpose of this kind of normalization is that we care about the price change in the next day because it is natural for twitter users to tweet about a topic that has influenced the stock price already. <br>
+        We can’t see any points on the Fig. 2 that matches our criteria, we do not have any high price change on the data while having high influence in Twitter feed prior to the day. The high influence points indicate the days that Twitter users have been active on an event that has happened already. </p>
+
+
         <h1>API Documentations</h1>
         <h5>Twitter API</h5>
         For Twitter Search API usage please follow this <a href="https://dev.twitter.com/rest/public/search">link</a> for documentations.
@@ -158,7 +184,8 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Template by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
+        <p class="copyright">Slate theme maintained by <a href="https://github.com/jasoncostello">Jason Costello</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
