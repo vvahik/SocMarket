@@ -31,7 +31,9 @@
       <section id="main_content" class="inner">
         <h1>About The Project</h1>
         <p>This project introduces a bridge between Social Media and the Stock Market. Social Media has became a big part of everyone’s life, and every single individual participating in mass media has it’s own impact on the social media. Large public companies and corporations play a part in social media as well. There are thousands of companies working on tools for Stock Market: predicting, analysing, buying-selling and etc. It is almost impossible to predict the price of the company's stock with a single analysis, as there is a mountain of information to consider. There is a very well known theory in finance “Random Walk Theory”, which says that one can never predict the stock price at given time, as the stock price randomly moves up and down. Another obstacle for predicting the stock price is that the future success and failure analysis is already calculated within the stock price so theoretically it is impossible to predict the stock price. <br>
- But as mentioned above, social media has become so big that it can impact companies. The main goal of the project is to predict price of a stock using web scraping and sentiment analysis approach.</p>
+  But as mentioned above, social media has become so big that it can impact companies. The main goal of the project is to predict price of a stock using web scraping and sentiment analysis approach. The project is based on real time tweeter data, and activity in social media. Opinions of users of social media worldwide can make a difference for a company. Innovations usually bring success to the company, but what if the innovations introduced by a company are not favorable for customers. For example, Apple introduced its newest Iphone in September, and they claimed that they moved to a new era for using headphones, by removing the headphone jack, and moving to complete wireless headphones. First, it looks like a good idea and very interesting, but once Apple introduced this, even when there were rumors about this, social media was full of complains. Social media users are the customers of Apple, and this impacted the stock price, because people were not happy with removing the headphone jack. <br>
+The project is going to emphasize cases like mentioned above, and look for opinions and thoughts in social media, before it becomes trending in the news. 
+</p>
 
         <h4>Data</h4>
 
@@ -55,24 +57,32 @@
 
         <p>Analyzing the data, there were very interesting correlations found between stock market and social media. Stock market is unpredictable, but at the same time if one can predict one or two prices per year, it is an opportunity.</p> 
 
-        <p>For testing and analyzing purposes Apple Inc. has been chosen to do analysis on. There were some interesting points in the graph found. 
-        Please see the graph representing the influence in social media and price of Apple Inc. of the following day.</p>
-        <h6>Fig. 1 Apple Inc. Price and Influence</h6>
+        <p>In order to have better idea in stock market changes and twitter data, historic twitter data and stock market data has been gathered to analyze and inspect to find colorations. The data has been normalized so we compare the price of the stock market with the twitter data of the prior day of stock price change. 
+          </p>
+          <p>Please see bellow Figure 1.1 for Apple Inc. price change and the twitter data activity of the prior day</p>
+        <h6>Fig. 1.1 Apple Inc. Price and Influence</h6>
         <p><img class=imgA src="img/apple1.jpg" alt="apple1" height="500" width="600"/></p>
-        <p>As illustrated in Fig. 1, and pointed we red arrows there is one point were influence is comparably very high, but the price has not been changed much the day before. Instead the price has been dropped for almost 2.5 dollars next day. Which is what the project is looking to find. The reasons or topics is not very important, there is a fact twitter feed was active a day before stock market was influenced. 
-        Other than the day pointed with the red arrow, the stock market and social media has been acting naturally. When something happens in the stock market, twitter users react to the change. 
+        <p>As illustrated in Fig. 1.1 the twitter data has been reacting to price change the day of the change, which is natural but here is one point the graph, marked with red arrow, the price of the stock that day has been dropped after the twitter data activity. This is type of cases are the ones that the program will act successfully. This change might be caused by many reasons such as: a new product, announcements, financial reports or just rumors in social media.
+        Of course it matters what is the cause of the twitter activity but in our case we care about the fact of twitter hyperactivity.</p>
+        
+        <p>In order to further analyze and discuss the stock market and twitter data company Alphabet Inc. has been chosen. Alphabet Inc. is a parent company of Google, and also Alphabet includes many more other companies. 
+		Please see stock price and the influence of twitter of Alphabet Inc. in the following graph.
         </p>
-        <p>It is always important to find cases were social media does not act before the price change, and for this purpose Google Inc. data has been evaluated. Please see stock price and the influence of twitter of Google Inc. in the following graph.
-        </p>
-        <h6>Fig. 2 Alphabet Inc. Price and Influence</h6>
+        <h6>Fig. 1.2 Alphabet Inc. Price and Influence</h6>
         <p><img src="img/google1.jpg" alt="google1" height="500" width="600"/></p>
-        <p>In the Fig. 2 we can see a big price change (marked with blue arrow) and it is associated with high change of influence, even though influence is comparably high but it is not so high that would interest us at his point. While looking at the influence level marked with red arrow, we can see that there are no big price changes recorded. The high influence can be caused by a big change in price in last 5 days.</p>
-        <p>Company, Tesla has been chosen for further analysis. As Tesla one of the most successful none IT companies, It would be interesting to visualize and analyze Tesla stock price with Twitter Data. 
+        <p>In the Fig. 2 we can see a big price change (marked with blue arrow) and it is associated with high change of influence, even though influence is comparably high but it is not so high that would interest us at his point. While looking at the influence level marked with red arrow, we can see that there are no big price changes recorded. The high influence can be caused by a big change in price in last few days. Analyzing what we have, we cannot be curtain about this case, but we know for fact that there was a high twitter activity associated with big price change next day. </p>
+
+        <p>
+        Company, Tesla has been chosen for further analyze. As Tesla one of the most successful none IT companies, it would be interesting to analyze Tesla stock price with Twitter Data for a period of time. 
         </p>
-        <h6>Fig. 3 Tesla Price and Influence</h6>
+        <h6>Fig. 1.3 Tesla Motors Inc. Price and Influence</h6>
         <p><img src="img/tesla1.jpg" alt="tesla1" height="500" width="600"/></p>
-        <p>In the Fig. 3, the date marked with red arrow indicates that only interesting point for us to look into. There was a huge price growth, with very high influence. Moreover, the price kept changing while the twitter data was very active. There are many other points in the graph having high influence level, but the price change was not recorded for the next day. This can be associated with past events that happened with the company, or stock market. It is natural that twitter reacts to the stock market changes late.
-</p>
+        <p>In the Fig. 1.3, the date marked with red arrow indicates that only interesting point for us to look into. There was a huge price growth, with very high influence. Moreover, the price kept changing while the twitter data was very active. There are many other points in the graph having high influence level, but the price change was not recorded for the next day. This can be associated with past events that happened with the company, or stock market. It is natural that twitter reacts to the stock market changes late. As we do not have the data of twitter before the point marked with red arrow, so we cannot make conclusions about the causes of Twitter activity.</p>
+        <h6>Fig. 1.4 Facebook Inc. Price and Influence</h6>
+        <p><img src="img/fb1.jpg" alt="fb1" height="500" width="600"/></p>
+        <p>
+        As market in the Fig. 1.4 with red arrow, the point is the only hyperactivity in the graph. As the twitter data graph is shifted a day forward we can see that the first spike of the twitter data had no influence on the stock market. And stock price was not changed, but the following day was a huge incline (marked with blue sign). This is an essential point in the project. These are cases that are intersting and worth analyzing furthure.
+        </p>
         <h1>Observations</h1>
 
         <p>
@@ -83,39 +93,58 @@
         <p>
         Using MapReduce techniques data was normalized to find the most active and passive times for twitter feed.
         </p>
-        <h6>Fig. 1 Apple Inc. Best Time Of The Day</h6>
+        <h6>Fig. 2.1 Apple Inc. Best Time Of The Day</h6>
         <p><img src="img/appleTime.jpg" alt="appleTime" height="500" width="600"/></p>
         
-        <h6>Fig. 2 Alphabet Inc. Best Time Of The Day</h6>
+        <h6>Fig. 2.2 Alphabet Inc. Best Time Of The Day</h6>
         <p><img src="img/googleTime.jpg" alt="googleTime" height="500" width="600"/></p>
 
+        <h6>Fig. 2.3 Tesla Motores Inc. Best Time Of The Day</h6>
+        <p><img src="img/teslaHour.jpg" alt="teslaHour" height="500" width="600"/></p>
+
+        <h6>Fig. 2.4 Facebook Inc. Best Time Of The Day</h6>
+        <p><img src="img/fbTime.jpg" alt="facebookHour" height="500" width="600"/></p>
+
         <p>
-        In Fig. 1 and Fig. 2 are illustrated the most active times of the twitter feed about the companies. Even though this information is not directly linked to the project purpose but these will help to observe social media and stock market more effectively. 
+        In Figuries 1, 2 , 3 and 4 illustrate the most active times of the twitter feed about the companies. Even though this information is not directly linked to the project purpose but these will help to observe social media and stock market more effectively. Even though this is not a statistics that we can rely on for future, as it is really based on the time line analyzed, but this can be used to furthure analyze the data.
         </p>
          <h4>Best Day Of The Week</h4>
         <p>
         Using MapReduce techniques data was normalized to find the most active and passive days for twitter feed.
         </p>
-        <h6>Fig. 3 Apple Inc. Day Of The Week</h6>
+        <h6>Fig. 2.5 Apple Inc. Day Of The Week</h6>
         <p><img src="img/appleDay.jpg" alt="appleDay" height="500" width="600"/></p>
 
-        <h6>Fig. 4 Alphabet Inc. Day Of The Week</h6>
+        <h6>Fig. 2.6 Alphabet Inc. Day Of The Week</h6>
         <p><img src="img/googleDay.jpg" alt="googleDay" height="500" width="600"/></p>
+
+        <h6>Fig. 2.7 Tesla Motors Inc. Day Of The Week</h6>
+        <p><img src="img/teslaDay.jpg" alt="teslaDay" height="500" width="600"/></p>
         
+        <h6>Fig. 2.8 Facebook Inc. Day Of The Week</h6>
+        <p><img src="img/fbDay.jpg" alt="fbHour" height="500" width="600"/></p>
+
         <p>
-        In Fig. 3 and Fig. 4 are illustrated the most active days of the twitter feed about Apple Inc. and Alphabet Inc. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. 
+        In Fig. 5, 6 ,7 and 8 are illustrated the most active days of the twitter feed about Apple Inc. and Alphabet Inc. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. 
         </p>
          <h4>Price Change Average Of Week Days</h4>
         <p>
         Using MapReduce techniques data was normalized to find average positive and average negative changes of the stock price of Apple Inc..
         </p>
-        <h6>Fig. 5 Apple Inc. Price Change</h6>
+        <h6>Fig. 2.9 Apple Inc. Price Change</h6>
         <p><img src="img/appleChange.jpg" alt="appleChange" height="500" width="600"/></p>
-        <h6>Fig. 6 Alphabet Inc. Price Change</h6>
+
+        <h6>Fig. 2.10 Alphabet Inc. Price Change</h6>
         <p><img src="img/googleChange.jpg" alt="googleChange" height="500" width="600"/></p>
+
+        <h6>Fig. 2.11 Tesla Motors Inc. Price Change</h6>
+        <p><img src="img/teslaChange.jpg" alt="teslaChange" height="500" width="600"/></p>
+
+        <h6>Fig. 2.12 Facebook Inc. Price Change</h6>
+        <p><img src="img/fbChange.jpg" alt="fbChange" height="500" width="600"/></p>
         <p>
         <p>
-        In Fig. 5 and Fig. 6 are illustrated the average negative and average positive price changes. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively.  
+        In Fig. 9, 10, 11 and 12 are illustrated the average negative and average positive price changes. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively.  
         </p>
 
          <h4>World Heat Map Of Twitter Feed</h4>
@@ -124,12 +153,16 @@
         The location of each Twitter user has been determined using Twitter Search API, and using MapReduce techniques the data was normalized. 
 
         </p>
-        <h6>Fig. 7 Apple Inc. Twitter Feed Heat Map</h6>
+        <h6>Fig. 2.13 Apple Inc. Twitter Feed Heat Map</h6>
         <p><img src="img/appleMap.jpg" alt="appleMap" height="500" width="600"/></p>
-        <h6>Fig. 8 Alphabet Inc. Twitter Feed Heat Map</h6>
+        <h6>Fig. 2.14 Alphabet Inc. Twitter Feed Heat Map</h6>
         <p><img src="img/googleMap.jpg" alt="googleMap" height="500" width="600"/></p>
+        <h6>Fig. 2.15 Tesla Motors Inc. Twitter Feed Heat Map</h6>
+        <p><img src="img/teslaMap.jpg" alt="teslaMap" height="500" width="600"/></p>
+        <h6>Fig. 2.16 Facebook Inc. Twitter Feed Heat Map</h6>
+        <p><img src="img/fbMap.jpg" alt="fbMap" height="500" width="600"/></p>
         <p>
-        In Fig. 7 and Fig. 8 are illustrated the world heat map showing number of tweets about Apple Inc. and Alphabet Inc. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. </p>
+        In Fig. 13, 14, 15 and 16 are illustrated the world heat map showing number of tweets about Apple Inc. and Alphabet Inc. Even though this information is not directly linked to the project purpose but this will help to observe social media and stock market more effectively. </p>
         <h1>Results</h1>
 
         <p>
@@ -149,7 +182,6 @@
         In Fig. 1 we can see two points that could interest us (marked with white circle). Both of these points are on high influence and high price change. For this case we will look only at one point with highest influence and highest price change (marked with red arrow). As we can see the price has changed with almost 2.75$ in a day, but the prior day the twitter feed was very active. This shows us the program would be able to grab this information, and make decision of buying or selling the stock.
          </p>
          <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day of Alphabet Inc.</h4>
-
         <p>
         A scatter plot has been used to visualize the data and find correlations between twitter data and stock market. The data was normalized for twitter feed of the day and price change of the next day.
         </p>
@@ -159,18 +191,26 @@
         In Fig. 2 is illustrated the influence and stock price change of Alphabet Inc. next day, the purpose of this kind of normalization is that we care about the price change in the next day because it is natural for twitter users to tweet about a topic that has influenced the stock price already. <br>
         We can’t see any points on the Fig. 2 that matches our criteria, we do not have any high price change on the data while having high influence in Twitter feed prior to the day. The high influence points indicate the days that Twitter users have been active on an event that has happened already. </p>
 
-        <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day of Tesla</h4>
+        <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day of Tesla Motors Inc.</h4>
 
         <p>
         A scatter plot has been used to visualize the data and find correlations between twitter data and stock market. The data was normalized for twitter feed of the day and price change of the next day.
         </p>
-        <h6>Fig. 3 Tesla Influence and Stock Price Change Of The Follwoing Day</h6>
+        <h6>Fig. 3 Tesla Motors Inc. Influence and Stock Price Change Of The Follwoing Day</h6>
         <p><img src="img/teslaResult.jpg" alt="teslaResult" height="500" width="600"/></p>
         <p>
         In Fig. 3 is illustrated the influence and stock price change of Alphabet Inc. next day, the purpose of this kind of normalization is that we care about the price change in the next day because it is natural for twitter users to tweet about a topic that has influenced the stock price already. <br>
-        We can’t see any points on the Fig. 2 that matches our criteria, we do not have any high price change on the data while having high influence in Twitter feed prior to the day. The high influence points indicate the days that Twitter users have been active on an event that has happened already. </p>
+        We can’t see any points on the Fig. 3 that matches our criteria, we do not have any high price change on the data while having high influence in Twitter feed prior to the day. The high influence points indicate the days that Twitter users have been active on an event that has happened already. </p>
+         <h4>The Influence Of The Twitter Feed And Stock Price Change Of The Following Day of Facebook Inc.</h4>
 
-
+        <p>
+        A scatter plot has been used to visualize the data and find correlations between twitter data and stock market. The data was normalized for twitter feed of the day and price change of the next day.
+        </p>
+        <h6>Fig. 4 Facebook Inc. Influence and Stock Price Change Of The Follwoing Day</h6>
+        <p><img src="img/fbResult.jpg" alt="fbResult" height="500" width="600"/></p>
+        <p>
+        In the Fig. 4 we can see two spikes in the twitter activity (marked with white circle). These points are the points that interest us only. The point marked with red arrow shows that highest price change in the circle. The reason of the high twitter activity is the big price shift the day before. It is very important to take into consideration these factors.
+        </p>
         <h1>API Documentations</h1>
         <h5>Twitter API</h5>
         For Twitter Search API usage please follow this <a href="https://dev.twitter.com/rest/public/search">link</a> for documentations.
